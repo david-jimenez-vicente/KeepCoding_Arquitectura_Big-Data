@@ -24,6 +24,7 @@
 
 ## *Resolución del ejercicio*  
 ### **Diseño del DAaaS**
+___
 **A.- Definición la estrategia del DAaaS**  
 
 El objetivo de esta arquitectura es desplegar una infraestructura suficientemente eficiente para analizar las imágenes tomadas por los últimos satélites de reconocimiento óptico de la Tierra en varias frecuencias y los de reconocimiento por radar SAR en varias bandas. El fin del proyecto es de Investigación. Se usará una comparación de las imágenes en varios espectros ópticos y de radar de las mismas coordenadas terrestres a lo largo de varios puntos de un periodo de tiempo, para intentar detectar cambios en los niveles del mar, geografía de las costas y cambios en la tectónica terrestre como los generados por  ejemplo por terremotos, movimientos de placas o fuerzas naturales sobre tierra firme. Servirá para predecir futuros cambios en la geología del planeta.  
