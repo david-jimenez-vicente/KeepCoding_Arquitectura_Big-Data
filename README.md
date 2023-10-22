@@ -40,7 +40,7 @@ La frecuencia de actualización será puntual y realizada manualmente, bien por 
 - Google Cloud Storage para almacenamiento de las imágenes y metadatos extraídos.
 - Google BigQuery para crear la base de datos maestra del datawarehouse.
 - Cluster de Dataproc de Google Cloud para uso con Jupyter Notebooks.  
-
+  
 **C.- DAaaS Operating Model Design and Rollout**  
 
 Crear y configurar un Proyecto de Google Cloud.
