@@ -42,13 +42,13 @@ El resultado del estudio será personalizado y presentado al responsable de la A
     - arn:aws:s3:::capella-open-data/data/
 - Obtención de los datos del programa de misiones Copernicus con la API propia de la ESA: https://apihub.copernicus.eu/apihub/.  
 
-          
+
 **Componentes:**  
 
 - Google Cloud Storage para almacenamiento de las imágenes y metadatos extraídos.
 - Google BigQuery para crear la base de datos maestra del datawarehouse.
 - Cluster de Dataproc de Google Cloud para uso con Jupyter Notebooks.
-
+** **
 **C. DAaaS Operating Model Design and Rollout**  
 
 1. Crear y configurar un Proyecto de Google Cloud.
