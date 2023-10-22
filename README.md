@@ -47,7 +47,7 @@ El resultado del estudio será personalizado y presentado al responsable de la A
 
 + Google Cloud Storage para almacenamiento de las imágenes y metadatos extraídos.
 + Google BigQuery para crear la base de datos maestra del datawarehouse.
-+ Cluster de Dataproc de Google Cloud para uso con Jupyter Notebooks.  
++ Cluster de Dataproc de Google Cloud para uso con Jupyter Notebooks, dimensionado fuertemente para el exigente trabajo, con al menos 5 workers además del master.  
 .
 
 **C. DAaaS Operating Model Design and Rollout**  
@@ -57,4 +57,5 @@ El resultado del estudio será personalizado y presentado al responsable de la A
 3. Crear un Cluster en Dataproc con autoinstalación de Jupyter Notebooks.
 4. Configurar Hadoop, y Yarn para distribuir el servicio de Jupyter Notebooks.
 5. Usar un Notebook de Python usando la API de Amazon para extraer los datos de los dos buckets de S3, y conectar con la API REST  de OpenSearch del repositorio del proyecto Copernicus. Dicho Notebook extraerá las imágenes del periodo que nos interesa y su metadata y las volcará al bucket de Google Storage.
-6. Otro Notebook se usará para empezar el procesamiento ELT conectándose al bucket de Google Storage, leer las imágenes y transformarlas a su matriz de valores en escalas de grises (las imágenes de radar SAR son en grises)
+6. Otro Notebook se usará para empezar el procesamiento ELT conectándose al bucket de Google Storage, leer las imágenes y transformarlas a su matriz de valores en escalas de grises (las imágenes de radar SAR son en grises). Luego las
+7. Un tercer Notebook se usará para el modelo de ML.
