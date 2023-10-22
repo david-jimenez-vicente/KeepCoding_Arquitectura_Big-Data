@@ -35,7 +35,8 @@ La frecuencia de actualización será puntual y realizada manualmente, bien por 
 **Fuentes de datos:**
 - Obtención directa de los datos del bucket de Amazon de los resultados de los satélites de Umbra: arn:aws:s3:::umbra-open-data-catalog/
 - Obtención directa de los datos del bucket de Amazon de los resultados de los satélites de Capella: arn:aws:s3:::capella-open-data/data/
-- Obtención de los datos del programa de misiones Copernicus con la API propia de la ESA: https://apihub.copernicus.eu/apihub/
+- Obtención de los datos del programa de misiones Copernicus con la API propia de la ESA: https://apihub.copernicus.eu/apihub/  
+
 **Componentes:**  
 - Google Cloud Storage para almacenamiento de las imágenes y metadatos extraídos.
 - Google BigQuery para crear la base de datos maestra del datawarehouse.
