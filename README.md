@@ -40,7 +40,7 @@ El resultado del estudio será personalizado y presentado al responsable de la A
 - Obtención directa de los datos del bucket de Amazon de los resultados de los satélites de Capella:  
     - arn:aws:s3:::capella-open-data/data/
 - Obtención de los datos del programa de misiones Copernicus con la API propia de la ESA: https://apihub.copernicus.eu/apihub/.
-    
+
 
 **Componentes:**  
 - Google Cloud Storage para almacenamiento de las imágenes y metadatos extraídos.
@@ -49,9 +49,9 @@ El resultado del estudio será personalizado y presentado al responsable de la A
 
 **C.- DAaaS Operating Model Design and Rollout**  
 
-Crear y configurar un Proyecto de Google Cloud.
-Crear un bucket de almacenamiento en Google Storage.
-Crear un Cluster en Dataproc con autoinstalación de Jupyter Notebooks.
-Configurar Hadoop, y Yarn para distribuir el servicio de Jupyter Notebooks.
-Usar un Notebook de Python usando la API de Amazon para extraer los datos de los dos buckets de S3, y conectar con la API REST  de OpenSearch del repositorio del proyecto Copernicus. Dicho Notebook extraerá las imágenes del periodo que nos interesa y su metadata y las volcará al bucket de Google Storage.
-Otro Notebook se usará para empezar el procesamiento ELT conectándose al bucket de Google Storage, leer las imágenes y transformarlas a su matriz de valores en escalas de grises (las imágenes de radar SAR son en grises)
+1. Crear y configurar un Proyecto de Google Cloud.
+2. Crear un bucket de almacenamiento en Google Storage.
+3. Crear un Cluster en Dataproc con autoinstalación de Jupyter Notebooks.
+4. Configurar Hadoop, y Yarn para distribuir el servicio de Jupyter Notebooks.
+5. Usar un Notebook de Python usando la API de Amazon para extraer los datos de los dos buckets de S3, y conectar con la API REST  de OpenSearch del repositorio del proyecto Copernicus. Dicho Notebook extraerá las imágenes del periodo que nos interesa y su metadata y las volcará al bucket de Google Storage.
+6. Otro Notebook se usará para empezar el procesamiento ELT conectándose al bucket de Google Storage, leer las imágenes y transformarlas a su matriz de valores en escalas de grises (las imágenes de radar SAR son en grises)
