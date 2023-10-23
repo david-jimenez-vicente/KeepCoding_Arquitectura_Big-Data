@@ -47,7 +47,7 @@ El resultado del estudio será personalizado y presentado al responsable de la A
 
 + Google Cloud Storage para almacenamiento de las imágenes y metadatos extraídos.
 + Google BigQuery para crear la base de datos maestra del datawarehouse.
-+ Cluster de Dataproc de Google Cloud para uso con Jupyter Notebooks, dimensionado fuertemente para el exigente trabajo, con al menos 5 workers además del master.  
++ Cluster de Dataproc de Google Cloud para uso con Jupyter Notebooks, dimensionado con al menos 5 workers además del master.  
 .
 
 **C. DAaaS Operating Model Design and Rollout**  
@@ -57,5 +57,5 @@ El resultado del estudio será personalizado y presentado al responsable de la A
 3. Crear un Cluster en Dataproc con autoinstalación de Jupyter Notebooks.
 4. Configurar Hadoop, y Yarn para distribuir el servicio de Jupyter Notebooks.
 5. Usar un Notebook de Python usando la API de Amazon para extraer los datos de los dos buckets de S3, y conectar con la API REST  de OpenSearch del repositorio del proyecto Copernicus. Dicho Notebook extraerá las imágenes del periodo que nos interesa y su metadata y las volcará al bucket de Google Storage.
-6. Otro Notebook se usará para empezar el procesamiento ELT conectándose al bucket de Google Storage, leer las imágenes y transformarlas a su matriz de valores en escalas de grises (las imágenes de radar SAR son en grises). Luego las
-7. Un tercer Notebook se usará para el modelo de ML.
+6. Otro Notebook se usará para empezar el procesamiento ELT conectándose al bucket de Google Storage, leer las imágenes y transformarlas a su matriz de valores en escalas de grises (las imágenes de radar SAR son en grises). Luego insertará las matrices de cada imagen en una tabla creada para alojar la tabla principal del data warehouse en BigQuery, en el campo de "pixel_matrix". En dicha tabla habrá otros tres campos, uno de ellos con la coordenada central de la imagen, otro campo con con la fecha de escaneo y otro más con el link a la imagen original del bucket, los cuales se completarán con sucesivos párrafos del notebook.
+7. Un tercer Notebook se usará para el modelo de ML. Tomará la localización deseada en las dos fechas a comparar y realizará los cálculos entre las dos matrices de imágenes. El resultado lo comparará con las diferencias de otros sucesos etiquetados como catástrofe o no, y decidirá si el cambio detectado es un suceso crítico o no.
