@@ -79,13 +79,13 @@ The result of each study will be personalized and presented to the Agency Manage
 - Direct obtaining of data from the Amazon bucket of Capella satellite results:
      - arn:aws:s3:::capella-open-data/data/
 - Obtaining data from the Copernicus mission program with ESA's own API: https://apihub.copernicus.eu/apihub/.  
-
+.  
 **Components:**
 
 + Google Cloud Storage for extracted images and metadata storing.
 + Google BigQuery to create the master data warehouse database.
 + Google Cloud Dataproc cluster for use with Jupyter Notebooks, sized with at least 5 workers in addition to the master.  
-
+.  
 **C. DAaaS Operating Model Design and Rollout**
 
 1. Create and configure a Google Cloud Project.
