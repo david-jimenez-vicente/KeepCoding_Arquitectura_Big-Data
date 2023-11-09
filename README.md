@@ -3,9 +3,11 @@
 ---
 ## *Contenido del repositorio*  
 · Este README.md, con la descripción del enunciado y la resolución de la práctica.
+· El archivo del esquema en formatos .drawio y en pdf.  
 
 ## *Repository content*  
 · This README.md, that contains the exercise statement and its resolution.
+· The diagram file in .drawio and pdf formats.
 
 ---  
 
@@ -102,4 +104,6 @@ The result of each study will be personalized and presented to the Agency Manage
 7. A third Notebook will be used for the ML model. It will take the matrices for the desired locations on both dates to be compared and will perform the calculations of the differences between the image matrices of each location. The result will be compared with the differences between images resulting from other events already labeled as a catastrophe or not, and will decide if the change detected is important enough to label it as a critical event, or on the contrary, it is not. It will return a result with gray scale values to form an image of where the changes are, it will generate its image, and its label resulting from the critical event evaluation, so that the operator can generate the report.
 8. All Notebooks will run on the same cluster, and this will be kept on so that the scientific team can do work to discover new facts on the data already examined, or be able to work on new data at any time.
    
-### **Diagrama / Diagram**
+### **Diagrama / Diagram**  
+
+
