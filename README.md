@@ -106,4 +106,5 @@ The result of each study will be personalized and presented to the Agency Manage
    
 ### **Diagrama / Diagram**  
 
+![Arquitectura_1 drawio](https://github.com/david-jimenez-vicente/KeepCoding_Arquitectura_Big-Data/assets/130546814/64fbc83b-7c5b-4346-9bd7-011004bc4e30)
 
