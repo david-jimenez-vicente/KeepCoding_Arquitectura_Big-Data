@@ -3,11 +3,11 @@
 ---
 ## *Contenido del repositorio*  
 · Este README.md, con la descripción del enunciado y la resolución de la práctica.
-· El archivo del esquema en formatos .drawio y en pdf.  
+· El archivo del esquema en formatos .drawio y en imagen .png.  
 
 ## *Repository content*  
 · This README.md, that contains the exercise statement and its resolution.
-· The diagram file in .drawio and pdf formats.
+· The diagram file in .drawio and .png image formats.
 
 ---  
 
